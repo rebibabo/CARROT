@@ -100,9 +100,9 @@ if __name__ == "__main__":
     parser.add_argument('-lr', type=float, default=0.0001)
     parser.add_argument('-l2p', type=float, default=0)
     parser.add_argument('-lrdecay', action='store_true')
-    parser.add_argument('--data', type=str, default="../data/oj.pkl.gz")
-    parser.add_argument('--pretrain', type=str, default="../model_codebert_base_mlm")
-    parser.add_argument('--save_dir', type=str, default="../model/codebert")
+    parser.add_argument('--data', type=str, default="../data/OJ104/oj.pkl.gz")
+    parser.add_argument('--pretrain', type=str, default="microsoft/codebert-base")
+    parser.add_argument('--save_dir', type=str, default="../model")
     parser.add_argument('--bs', type=int, default=6)
     parser.add_argument('--nepoch', type=int, default=10)
     
